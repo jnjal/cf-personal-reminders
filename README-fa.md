@@ -82,7 +82,7 @@ compatibility_date = "2024-01-01"
 
 [[kv_namespaces]]
 binding = "REMINDERS_KV"
-id = "NAMESPACE_ID_خودت_را_اینجا_بذار"
+id = "REMINDERS_KV"
 
 [triggers]
 crons = ["*/15 * * * *"]
