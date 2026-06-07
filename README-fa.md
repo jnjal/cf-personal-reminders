@@ -254,19 +254,19 @@ https://api.telegram.org/bot<TOKEN_شما>/getWebhookInfo
 │                                                 │
 │  fetch handler  ◄──── Telegram Webhook          │
 │       │                                         │
-│       ├── Security gate (بررسی MY_CHAT_ID)      │
-│       ├── /new  → ویزارد (editMessageText)      │
-│       ├── /list → دکمه‌های حذف inline           │
+│       ├── Security gate (بررسی MY_CHAT_ID)       │
+│       ├── /new  → ویزارد (editMessageText)        │
+│       ├── /list → دکمه‌های حذف inline              │
 │       └── callback_query → wz:* / del:*         │
 │                                                 │
 │  scheduled handler  ◄──── Cron */15 min         │
 │       │                                         │
-│       └── اسکن KV → اجرای یادآورهای سررسیده    │
-│               ├── once     → ارسال + حذف        │
-│               └── recurring → ارسال + آپدیت     │
+│       └── اسکن KV → اجرای یادآورهای سررسیده            │
+│               ├── once     → ارسال + حذف         │
+│               └── recurring → ارسال + آپدیت        │
 │                                                 │
 │  Cloudflare KV                                  │
-│       ├── reminder:<uuid>  (دائمی)              │
+│       ├── reminder:<uuid>  (دائمی)                │
 │       └── temp_*:<chatId>  (TTL یک ساعت)        │
 └─────────────────────────────────────────────────┘
 ```
