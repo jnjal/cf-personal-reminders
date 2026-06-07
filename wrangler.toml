@@ -1,0 +1,10 @@
+name = "reminder-bot"
+main = "worker.js"
+compatibility_date = "6-7-2026"
+
+[[kv_namespaces]]
+binding = "REMINDERS_KV"
+id = "REMINDERS_KV"
+
+[triggers]
+crons = ["*/15 * * * *"]
