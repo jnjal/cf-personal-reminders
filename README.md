@@ -80,7 +80,7 @@ compatibility_date = "2024-01-01"
 
 [[kv_namespaces]]
 binding = "REMINDERS_KV"
-id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+id = "REMINDERS_KV"
 
 [triggers]
 crons = ["*/15 * * * *"]
